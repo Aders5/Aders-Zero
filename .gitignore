@@ -1,0 +1,31 @@
+# --- ADERS-ZERO SECURITY --- #
+include/secrets.h
+secrets.h
+*.pem
+*.key
+
+# --- CMAKE & BUILD SYSTEM --- #
+build/
+CMakeFiles/
+CMakeCache.txt
+CMakeScripts/
+cmake_install.cmake
+Makefile
+install_manifest.txt
+compile_commands.json
+
+# --- IDE & EDITORS --- #
+.vscode/
+.history/
+*.code-workspace
+
+# --- SIMULADOR LVGL --- #
+lv_port_pc_vscode/build/
+lv_port_pc_vscode/bin/
+*.exe
+*.out
+*.app
+
+# --- OS GENERATED FILES --- #
+.DS_Store
+Thumbs.db
