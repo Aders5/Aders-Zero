@@ -1,12 +1,31 @@
-# Ignore build folder
+# --- ADERS-ZERO SECURITY --- #
+include/secrets.h
+secrets.h
+*.pem
+*.key
+
+# --- CMAKE & BUILD SYSTEM --- #
 build/
-bin/
+CMakeFiles/
+CMakeCache.txt
+CMakeScripts/
+cmake_install.cmake
+Makefile
+install_manifest.txt
+compile_commands.json
 
-# Ignore all dot folders, with below exceptions
-.*/
+# --- IDE & EDITORS --- #
+.vscode/
+.history/
+*.code-workspace
 
-# VSCode
-.vscode
+# --- SIMULADOR LVGL --- #
+lv_port_pc_vscode/build/
+lv_port_pc_vscode/bin/
+*.exe
+*.out
+*.app
 
-# MacOS file
+# --- OS GENERATED FILES --- #
 .DS_Store
+Thumbs.db
